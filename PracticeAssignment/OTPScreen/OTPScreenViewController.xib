@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OTPScreenViewController" customModule="ExampleAssignment" customModuleProvider="target">
+            <connections>
+                <outlet property="continueButton" destination="Nk1-bP-W9K" id="tBO-MW-EYs"/>
+                <outlet property="countDownLabel" destination="l4Q-uE-yHY" id="IJL-pN-Lwb"/>
+                <outlet property="editIconImage" destination="QZ6-Re-sQA" id="YVA-jj-MB3"/>
+                <outlet property="enterOTPLabel" destination="ebE-m8-qQ5" id="th6-CD-D6f"/>
+                <outlet property="otpTextField" destination="EHb-Q5-zlR" id="CBQ-6F-fLo"/>
+                <outlet property="phoneNumberLabel" destination="ATz-Jw-YDF" id="BcW-46-317"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+00 0000000000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ATz-Jw-YDF">
+                    <rect key="frame" x="30" y="79" width="138" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="oKr-8K-uDa"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter The OTP" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ebE-m8-qQ5">
+                    <rect key="frame" x="30" y="124.00000000000001" width="74" height="40.666666666666671"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="0000" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EHb-Q5-zlR">
+                    <rect key="frame" x="30" y="174.66666666666666" width="63" height="34"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="numberPad" textContentType="one-time-code"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nk1-bP-W9K">
+                    <rect key="frame" x="30.000000000000007" y="223.66666666666666" width="92.666666666666686" height="34.999999999999972"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Continue"/>
+                    <connections>
+                        <action selector="continueButtonTapped:" destination="-1" eventType="touchUpInside" id="irh-RK-tc1"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:59" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l4Q-uE-yHY">
+                    <rect key="frame" x="132.66666666666666" y="223.66666666666666" width="46" height="34.999999999999972"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="editIcon-2" translatesAutoresizingMaskIntoConstraints="NO" id="QZ6-Re-sQA">
+                    <rect key="frame" x="178" y="89.666666666666671" width="14" height="14"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="QZ6-Re-sQA" secondAttribute="height" multiplier="1:1" id="aNE-AA-MoT"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="QZ6-Re-sQA" firstAttribute="centerY" secondItem="ATz-Jw-YDF" secondAttribute="centerY" id="9r0-Wc-4nC"/>
+                <constraint firstItem="l4Q-uE-yHY" firstAttribute="height" secondItem="Nk1-bP-W9K" secondAttribute="height" id="DK9-sP-CRp"/>
+                <constraint firstItem="Nk1-bP-W9K" firstAttribute="top" secondItem="EHb-Q5-zlR" secondAttribute="bottom" constant="15" id="FPs-r9-1gG"/>
+                <constraint firstItem="ATz-Jw-YDF" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="SOC-I9-ugs"/>
+                <constraint firstItem="EHb-Q5-zlR" firstAttribute="top" secondItem="ebE-m8-qQ5" secondAttribute="bottom" constant="10" id="YYV-J2-zPS"/>
+                <constraint firstItem="ebE-m8-qQ5" firstAttribute="leading" secondItem="ATz-Jw-YDF" secondAttribute="leading" id="cXL-qk-SO5"/>
+                <constraint firstItem="l4Q-uE-yHY" firstAttribute="leading" secondItem="Nk1-bP-W9K" secondAttribute="trailing" constant="10" id="gYW-br-tr6"/>
+                <constraint firstItem="ebE-m8-qQ5" firstAttribute="top" secondItem="ATz-Jw-YDF" secondAttribute="bottom" constant="10" id="iT5-k8-o0f"/>
+                <constraint firstItem="l4Q-uE-yHY" firstAttribute="centerY" secondItem="Nk1-bP-W9K" secondAttribute="centerY" id="jsT-rN-mQB"/>
+                <constraint firstItem="EHb-Q5-zlR" firstAttribute="leading" secondItem="ebE-m8-qQ5" secondAttribute="leading" id="mf7-Qv-5Al"/>
+                <constraint firstItem="ATz-Jw-YDF" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="pys-S6-M4B"/>
+                <constraint firstItem="QZ6-Re-sQA" firstAttribute="height" secondItem="ATz-Jw-YDF" secondAttribute="height" multiplier="0.4" id="rip-xb-Usp"/>
+                <constraint firstItem="QZ6-Re-sQA" firstAttribute="leading" secondItem="ATz-Jw-YDF" secondAttribute="trailing" constant="10" id="tMU-Rl-SP4"/>
+                <constraint firstItem="Nk1-bP-W9K" firstAttribute="leading" secondItem="EHb-Q5-zlR" secondAttribute="leading" id="zHl-9X-ozW"/>
+            </constraints>
+            <point key="canvasLocation" x="-76" y="20"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="editIcon-2" width="32" height="32"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

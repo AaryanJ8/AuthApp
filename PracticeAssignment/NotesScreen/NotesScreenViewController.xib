@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NotesScreenViewController" customModule="PracticeAssignment" customModuleProvider="target">
+            <connections>
+                <outlet property="apiResponseDataLabel" destination="tQ8-M4-rr7" id="asz-29-2rL"/>
+                <outlet property="notesLabel" destination="ypH-JJ-mc4" id="xcW-bb-hT6"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tabBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e97-eV-Xt7">
+                    <rect key="frame" x="0.0" y="768" width="393" height="50"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="lix-tR-zCo"/>
+                    </constraints>
+                    <items>
+                        <tabBarItem title="Discover" image="square.split.2x2.fill" catalog="system" id="sYq-72-Hhe"/>
+                        <tabBarItem title="Notes" image="envelope.fill" catalog="system" id="1Eh-2X-eO1"/>
+                        <tabBarItem title="Matches" image="message.fill" catalog="system" id="Djd-UP-sT6"/>
+                        <tabBarItem title="Profile" image="person.fill" catalog="system" id="4tU-mn-sMQ"/>
+                    </items>
+                    <color key="tintColor" systemColor="systemPurpleColor"/>
+                </tabBar>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ypH-JJ-mc4">
+                    <rect key="frame" x="0.0" y="69" width="393" height="20.333333333333329"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tQ8-M4-rr7">
+                    <rect key="frame" x="0.0" y="99.333333333333329" width="393" height="20.333333333333329"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="ypH-JJ-mc4" secondAttribute="trailing" id="4qI-o8-T3v"/>
+                <constraint firstItem="e97-eV-Xt7" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="57i-19-1eJ"/>
+                <constraint firstItem="tQ8-M4-rr7" firstAttribute="top" secondItem="ypH-JJ-mc4" secondAttribute="bottom" constant="10" id="Atv-dr-eCv"/>
+                <constraint firstItem="ypH-JJ-mc4" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="QcP-2D-GV2"/>
+                <constraint firstItem="tQ8-M4-rr7" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="SqK-Yf-eon"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="tQ8-M4-rr7" secondAttribute="trailing" id="YIm-pD-Drh"/>
+                <constraint firstItem="e97-eV-Xt7" firstAttribute="top" secondItem="tQ8-M4-rr7" secondAttribute="bottom" constant="10" id="eAh-ZI-lBi"/>
+                <constraint firstItem="ypH-JJ-mc4" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="10" id="nUB-f1-y4o"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="e97-eV-Xt7" secondAttribute="bottom" id="sYf-5h-h49"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="e97-eV-Xt7" secondAttribute="trailing" id="uDe-D3-eI9"/>
+            </constraints>
+            <point key="canvasLocation" x="74" y="20"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="envelope.fill" catalog="system" width="128" height="93"/>
+        <image name="message.fill" catalog="system" width="128" height="114"/>
+        <image name="person.fill" catalog="system" width="128" height="120"/>
+        <image name="square.split.2x2.fill" catalog="system" width="128" height="114"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

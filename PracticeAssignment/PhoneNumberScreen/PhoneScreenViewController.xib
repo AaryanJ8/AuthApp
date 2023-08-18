@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PhoneScreenViewController" customModule="ExampleAssignment" customModuleProvider="target">
+            <connections>
+                <outlet property="continueButton" destination="CJL-04-8kU" id="xd5-J8-TxQ"/>
+                <outlet property="countryCodeTextField" destination="2Vw-VW-Pia" id="Pa7-G8-zmN"/>
+                <outlet property="enterPhoneLabel" destination="98C-U5-Vo7" id="xQw-Lj-xnq"/>
+                <outlet property="getOTPLabel" destination="9N8-Mf-Yei" id="8yD-Qf-yCc"/>
+                <outlet property="phoneNumberTextField" destination="Mrs-YL-wDK" id="1cx-ZE-oza"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Get OTP" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9N8-Mf-Yei">
+                    <rect key="frame" x="30" y="79" width="64.666666666666671" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter your Phone Number" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="98C-U5-Vo7">
+                    <rect key="frame" x="29.999999999999993" y="110.00000000000001" width="114.33333333333331" height="40.666666666666671"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="+00" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2Vw-VW-Pia">
+                    <rect key="frame" x="30" y="168" width="60" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="89p-gH-Gam"/>
+                        <constraint firstAttribute="width" constant="60" id="mdv-Tm-VkX"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="phonePad" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="tel"/>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="00000 00000" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Mrs-YL-wDK">
+                    <rect key="frame" x="105" y="168" width="118.66666666666669" height="35"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CJL-04-8kU">
+                    <rect key="frame" x="30" y="228" width="93" height="35"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Continue"/>
+                    <connections>
+                        <action selector="continueButtonTapped:" destination="-1" eventType="touchUpInside" id="gxh-4n-HRh"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="98C-U5-Vo7" firstAttribute="leading" secondItem="9N8-Mf-Yei" secondAttribute="leading" id="29I-7s-nE7"/>
+                <constraint firstItem="Mrs-YL-wDK" firstAttribute="leading" secondItem="2Vw-VW-Pia" secondAttribute="trailing" constant="15" id="AUn-30-WFo"/>
+                <constraint firstItem="98C-U5-Vo7" firstAttribute="top" secondItem="9N8-Mf-Yei" secondAttribute="bottom" constant="10" id="DLk-7X-GQd"/>
+                <constraint firstItem="CJL-04-8kU" firstAttribute="leading" secondItem="2Vw-VW-Pia" secondAttribute="leading" id="DRg-rH-hm3"/>
+                <constraint firstItem="9N8-Mf-Yei" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="QE8-bS-Eqv"/>
+                <constraint firstItem="CJL-04-8kU" firstAttribute="top" secondItem="2Vw-VW-Pia" secondAttribute="bottom" constant="25" id="eRQ-Zw-5Fd"/>
+                <constraint firstItem="9N8-Mf-Yei" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="kcI-kU-Hcu"/>
+                <constraint firstItem="2Vw-VW-Pia" firstAttribute="top" secondItem="98C-U5-Vo7" secondAttribute="bottom" constant="17.333333333333343" id="o63-SO-yaq"/>
+                <constraint firstItem="2Vw-VW-Pia" firstAttribute="leading" secondItem="98C-U5-Vo7" secondAttribute="leading" id="sb7-Lt-Qn3"/>
+                <constraint firstItem="Mrs-YL-wDK" firstAttribute="centerY" secondItem="2Vw-VW-Pia" secondAttribute="centerY" id="tlE-G2-lFn"/>
+                <constraint firstItem="Mrs-YL-wDK" firstAttribute="height" secondItem="2Vw-VW-Pia" secondAttribute="height" id="ySk-oR-XaY"/>
+            </constraints>
+            <point key="canvasLocation" x="72.51908396946564" y="19.718309859154932"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
